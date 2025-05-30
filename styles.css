@@ -27,6 +27,8 @@ section {
   align-content: center;
   justify-items: center;
   justify-content: center;
+  justify-self: center;
+  align-self: center;
   text-align: center;
   background-color: var(--White);
 }
