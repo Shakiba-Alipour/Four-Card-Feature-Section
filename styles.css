@@ -6,10 +6,127 @@
   --Grey500: hsl(234, 12%, 34%);
   --Grey400: hsl(212, 6%, 44%);
   --White: hsl(0, 0%, 100%);
+  --Grey-transparent: hsl(212, 6%, 88%);
 }
 
 html {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--White);
+  padding-top: 10rem;
+}
+
+.heading {
+  font-size: x-large;
+  color: var(--Grey400);
+}
+
+.tech {
+  font-size: xx-large;
+  font-weight: 600;
+  color: var(--Grey500);
+}
+
+.description {
+  color: var(--Grey500);
+  margin-bottom: 6em;
+}
+
+@media screen and (max-width: 700px) {
+  section {
+    width: 90%;
+    justify-items: center;
+    justify-self: center;
+  }
+
+  .heading {
+    margin: 0%;
+  }
+
+  .tech {
+    margin: 0%;
+  }
+
+  .description {
+    width: 80%;
+  }
+
+  li {
+    margin-bottom: 5rem;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background-color: var(--White);
+  box-shadow: 0 0.3em 1em var(--Grey-transparent);
+  display: grid;
+  grid-template-columns: 1 auto;
+}
+
+li:hover {
+  box-shadow: 0 0.3em 3rem var(--Grey-transparent);
+}
+
+ul li:nth-child(1) {
+  border-top: 0.6rem solid var(--Cyan);
+}
+
+ul li:nth-child(2) {
+  border-top: 0.6rem solid var(--Red);
+}
+
+ul li:nth-child(3) {
+  border-top: 0.6rem solid var(--Orange);
+}
+
+ul li:nth-child(4) {
+  border-top: 0.6rem solid var(--Blue);
+}
+
+.title {
+  font-size: larger;
+  font-weight: bold;
+  color: var(--Grey500);
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+.text {
+  font-size: medium;
+  font-weight: lighter;
+  color: var(--Grey400);
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.icon {
+  width: 4rem;
+  height: auto;
+  justify-self: end;
 }
 
 .attribution {
@@ -17,5 +134,5 @@ html {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Blue);
 }
